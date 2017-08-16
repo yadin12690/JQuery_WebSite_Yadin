@@ -1,0 +1,45 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <title>game</title>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link href="../Game/game.css" rel="stylesheet" />
+</head>
+<body>
+    <!--Level choise button-->
+    <div id="lvl">
+        <input type="button" value="Easy" class="lvlBTN" onclick="createTable(6,60)">
+        &nbsp;
+        <input type="button" value="Medium" class="lvlBTN" onclick="createTable(9,45)">
+        &nbsp;
+        <input type="button" value="Hard" class="lvlBTN" onclick="createTable(12,40)">
+        &nbsp;
+        <input type="button" value="All star" class="lvlBTN" onclick="createTable(16,35)"> <br><br>
+        <input type="button" value="New Game!" id="newGame" onclick="newGame()">
+        <!--Words bank-->
+        <fieldset>
+            <legend>Words to find!</legend><br/>
+            <h4 id="crossGame">Cross Puzzle Game!</h4>
+            <span id="mySpan"></span>
+        </fieldset>
+    </div>
+    <!--timer-->
+    <div id="timer">Game finish in <button id="time"></button> Seconds!</div>
+    <span id="instruct" >
+        Instruction: <br />     
+       1) You need to find all the words from the warehouse words,in the limited time<br />
+       2) Click once to select the desired letter,
+        On double click you can deselect your choise<br />
+       3) When you find a word, it is cleared from the warehouse words<br />
+       4) Each level has a diffrent time
+
+
+    </span>
+    <table id="myTable">
+        <tbody></tbody>
+    </table>
+    <script src="../Game/game.js"></script>
+</body>
+</html>

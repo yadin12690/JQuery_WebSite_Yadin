@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Scientific Calculator</title>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../Calculator/Sctcalc.js"></script>
+    <link href="../Calculator/Sctcalc.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="top">
+        <form class="calcForm" name="calculator">
+            <input type="text" class="calcDisplay" id="display" placeholder="Yadin&Tal Calculator" />
+            <div class="calcRow">
+                <input type="button" class="calcButton" value="7" onclick="numInput('7')" />
+                <input type="button" class="calcButton" value="8" onclick="numInput('8')" />
+                <input type="button" class="calcButton" value="9" onclick="numInput('9')" />
+                <input type="button" class="calcButton" value="√" onclick="numInput('√')" />
+                <input type="button" class="calcButton3" value="SMPL" onclick="switchcalc2()" />
+
+            </div>
+            <div class="calcRow">
+                <input type="button" class="calcButton" value="4" onclick="numInput('4')" />
+                <input type="button" class="calcButton" value="5" onclick="numInput('5')" />
+                <input type="button" class="calcButton" value="6" onclick="numInput('6')" />
+                <input type="button" class="calcButton" value="^" onclick="numInput('^')" />
+                <input type="button" class="calcButton2" value="CE" onclick="numInput('CE')" />
+
+            </div>
+            <div class="calcRow">
+                <input type="button" class="calcButton" value="1" onclick="numInput('1')" />
+                <input type="button" class="calcButton" value="2" onclick="numInput('2')" />
+                <input type="button" class="calcButton" value="3" onclick="numInput('3')" />
+                <input type="button" class="calcButton" value="+" onclick="numInput('+')" />
+                <input type="button" class="calcButton2" value="AC" onclick="numInput('AC')" />
+            </div>
+            <div class="calcRow">
+                <input type="button" class="calcButton" value="0" onclick="numInput('0')" />
+                <input type="button" class="calcButton" value="(" onclick="numInput('(')" />
+                <input type="button" class="calcButton" value=")" onclick="numInput(')')" />
+                <input type="button" class="calcButton" value="-" onclick="numInput('-')" />
+                <input type="button" class="calcButton2" value="=" onclick="calculate()" />
+            </div>
+        </form>
+        <span class="mySpan"> (c)  Yadin&Tal </span>
+    </div>
+</body>
+</html>

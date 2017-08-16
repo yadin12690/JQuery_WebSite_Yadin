@@ -1,0 +1,60 @@
+﻿body {
+    background-image: url('../Pics/wallpapers2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+form {
+    width: 340px;
+    height: 470px;
+    background: #e6e6e6;
+    border-radius: 8px;
+    box-shadow: 0 0 40px -10px #000;
+    margin: calc(50vh - 220px) auto;
+    padding: 20px 40px;
+    max-width: calc(100vw - 40px);
+    box-sizing: border-box;
+    font-family: 'Montserrat',sans-serif;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: none;
+    resize: none;
+    border: 1;
+    font-family: 'Montserrat',sans-serif;
+    transition: all .5s;
+    border-bottom: 2px solid #bebed2;
+}
+
+    input:focus {
+        border: 2px solid #78788c;
+    }
+
+
+
+#regiButton {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: none;
+    background-color:cornflowerblue;
+    outline: none;
+    resize: none;
+    border: 0;
+    font-size:20px;
+    font-weight:200;
+    font-family: 'Montserrat',sans-serif;
+    transition: all .5s;
+    border-bottom: 2px solid #5e4ee8;
+}
+
+
+span.mySpan {
+    margin: 80px;
+    text-align: center;
+    text-shadow: -1px -1px 0px rgba(255,255,255,0.3), 1px 1px 0px rgba(0,0,0,0.8);
+    color: #333;
+}
